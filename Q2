@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+void minmax(int arr[],int size){
+   int max=0;
+   int min=arr[0];
+   for(int i=0;i<size;i++){
+      if(arr[i]>max){
+         max = arr[i];
+      }
+      if(arr[i]<min){
+         min=arr[i];
+      }
+   }
+   cout<<"Smallest: "<< min << endl;
+   cout<<"Largest: "<< max << endl;
+}
+void show(int arr[],int size){
+   for (int i = 0; i < size ; i++){
+      cout<<arr[i]<<" ";
+   }
+   cout<<endl;
+}
+int main(){
+   int size;
+   cout<<"Enter size of array:";
+   cin>>size;
+   int ar[10];
+   cout<<"Enter array elements:";
+   for (int i = 0; i < size; i++){
+      cin>>ar[i];
+   }
+   show(ar,size);
+   minmax(ar,size);
+}
