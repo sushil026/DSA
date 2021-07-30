@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+void swapper(int a[],int size){
+   int x = 0;
+   int temp;
+   int y = size-1;
+   while(y>x){
+      temp=a[x];
+      a[x]=a[y];
+      a[y]=temp;
+      x++;
+      y--;
+   }
+}
+void printer(int a[],int size){
+   for (int i = 0; i < size; i++){
+      cout<< a[i] << " ";
+   }
+   cout<<endl;
+}
+int main(){
+   int size;
+   cout<<"Enter size of array:";
+   cin>>size;
+   int ar[10];
+   cout<<"Enter array elements:";
+   for (int i = 0; i < size; i++){
+      cin>>ar[i];
+   }
+   cout<<"Original Array:";
+   printer(ar,size);
+   swapper(ar,size);
+   cout<<"Reversed array:";
+   printer(ar,size);
+   return 0;
+}
