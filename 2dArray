@@ -35,3 +35,35 @@ using namespace std;
 // 	}
 // 	return 0;
 // }
+// TRANSPOSE OF A MATRIX :
+  // int main(){
+ // 	int n, m, x;
+ //    cin >> n>> m;
+ //    vector< vector<int> > mat;
+ //    vector<int> pass;
+ //    for (int i = 0; i < n; ++i){
+ //        for (int j = 0; j < m; ++j){
+ //            cin >> x;
+ //            pass.push_back(x);
+ //        } mat.push_back(pass);
+ //        pass.clear();
+ //    }
+ //    for (int i = 0; i < n; ++i){
+ //        for (int j = 0; j < m; ++j){
+ //            cout << mat[i][j]<< " ";
+ //        }cout << endl;
+ //    }
+ //    for (int i = 0; i < n; ++i){
+ //        for (int j = i; j < m; ++j){
+ //            int temp = mat[j][i];
+ //            mat[j][i] = mat[i][j];
+ //            mat[i][j] = temp;
+ //        }
+ //    } cout << "transpose \n";
+ //    for (int i = 0; i < n; ++i){
+ //        for (int j = 0; j < m; ++j){
+ //            cout << mat[i][j]<< " ";
+ //        }cout << endl;
+ //    }
+ // 	return 0;
+ // }
