@@ -87,3 +87,25 @@ using namespace std;
 //         cout << endl;
 //     return 0;
 // }
+//SEARCHING IN A SORTED MATRIX :
+
+// int main(){
+//     vector<vector<int> > mat = {{1,4,7,11}, {2,5,8,12}, {3,6,9,16}, {10,13,14,17}};
+//     int fin = 10;
+//     int r = 0;
+//     int c = mat[0].size();
+//     while (r>=0 && c>=0){
+//         if( mat[r][c] == fin){
+//             cout << r<< " "<< c;
+//             return 0;
+//         }
+//         else if( fin < mat[r][c]){
+//             c--;
+//         }
+//         else if( fin > mat[r][c]){
+//             r++;
+//         }
+//         cout << mat[r][c]<< " to ";
+//     }
+//     return 0;
+// }
