@@ -1,0 +1,19 @@
+// PALINDROME CHARACTERS :
+
+ // int main(){
+ //    char str[30];
+ //    int n;
+ //    cin >> n;
+ //    cin >> str;
+ //    int front = 0, end = n-1;
+ //    while( front < end){
+ //        if( str[front] != str[end]){
+ //            cout << "Not palindrome";
+ //            return 0;
+ //        }
+ //        front++;
+ //        end--;
+ //    }
+ //    cout << "Is palindrome";
+ //    return 0;
+ // }
