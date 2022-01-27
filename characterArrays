@@ -17,3 +17,36 @@
  //    cout << "Is palindrome";
  //    return 0;
  // }
+//LARGEST WORD IN A SENTENCE :
+
+// int main(){
+//     int n; 
+//     cin >> n;
+//     cin.ignore();
+//     char str[n+1];
+//     cin.getline(str, n+1);
+//     cin.ignore();
+//     int i = 0, stStr = 0, stEnd = 0, mxLen = 0, curLen = 0;
+//     while(1){
+//         if( str[i] == ' ' || str[i] == '\0'){
+//             if(mxLen < curLen){
+//                 mxLen = curLen;
+//                 stEnd = stStr;
+//             }
+//             curLen = 0;
+//             stStr = i+1;
+//         }
+//         else{
+//             curLen++;
+//         }
+//         if( str[i] == '\0'){
+//             break;
+//         }
+//         i++;
+//     }
+//     cout << mxLen<< endl;
+//     for (int i = 0; i < mxLen; ++i){
+//         cout << str[i+ stEnd];
+//     }
+//     return 0;
+//  }
