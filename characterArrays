@@ -50,3 +50,27 @@
 //     }
 //     return 0;
 //  }
+// STRINGS OPERATIONS :
+
+// int main(){
+//     string str = "hfjskrelpf";
+//     string STR = "HFJSKRELPF";
+//     transform( str.begin(), str.end(), str.begin(), ::toupper);
+//     cout << str<< endl;
+//     transform( STR.begin(), STR.end(), STR.begin(), ::tolower);
+//     cout << STR<< endl;
+//     return 0;
+// }
+
+// BIGGEST NUMBER OUT OF STRING :
+
+// int main()
+// {
+//     string str = "2543732";
+//     string s = "fseadgbvc";
+//     sort(str.begin(), str.end(), greater<int>());
+//     cout << str<< endl;
+//     sort(s.begin(), s.end(), greater<>());
+//     cout << s;
+//     return 0;
+// }
