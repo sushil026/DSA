@@ -74,3 +74,25 @@
 //     cout << s;
 //     return 0;
 // }
+
+// FREQUENCY OF HIGHEST OCCURING CHARACTER :
+
+// int main(){
+//     string str = "abcacbabbde";
+//     vector<int> freq( 26, 0);
+//     int i =0;
+//     for (int i = 0; i < str.size(); ++i){
+//         freq[str[i]-'a']++;
+//     }
+//     int mx = INT_MIN;
+//     char ans;
+//     for (int i = 0; i < 26; ++i){
+//         if( mx < freq[i]){
+//             mx = freq[i];
+//             ans = i+ 'a';
+//         }
+//     }
+//     cout << ans<< " "<< mx;
+//     return 0;
+// }
+
