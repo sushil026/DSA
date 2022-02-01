@@ -282,3 +282,15 @@ using namespace std;
 //  	pairSum(v,n,x);
 //  	return 0;
 //  }
+
+// types of candles :
+
+// int main(){
+//     int x, a, b;
+//     cin >> x>> a>> b;
+//     int min_AMT = INT_MAX;
+//     for( int i=1; i<= x; i++){
+//         min_AMT = min( (a*( i* i))+ (b*( abs(x-i) * abs(x-i))) , min_AMT);
+//     }
+//     cout << min_AMT;
+// }
