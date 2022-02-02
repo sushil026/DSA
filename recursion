@@ -1,0 +1,17 @@
+// STRING REVERSAL USING RECURSION:
+
+// int rev( string str){
+//     if( str.length()== 0){
+//         return 0;
+//     }
+//     string r = str.substr(1);
+//     rev( r);
+//     cout << str[0];
+// }
+// int main(){
+//     string str;
+//     cin >> str;
+//     rev(str);
+//     return 0;
+// }
+
