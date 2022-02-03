@@ -15,3 +15,25 @@
 //     return 0;
 // }
 
+// PI TO 3.14
+
+// void piTo3( string s){
+//     int n = s.length();
+//     int inc;
+//     if( s.length()== 0){ return;}
+//     if( s[0]== 'p' && s[1]== 'i'){
+//         cout << 3.14;
+//         inc = 2;
+//     }
+//     else{
+//         cout << s[0];
+//         inc = 1;
+//     }
+//     string sp = s.substr(inc);
+//     piTo3( sp);
+// }
+// int main(){
+//     string str = "pi/pi/pi";
+//     piTo3(str);
+//     return 0;
+// }
