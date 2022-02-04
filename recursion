@@ -33,3 +33,21 @@ int main(){
     piTo3(str);
     return 0;
 }
+
+// REMOVING DUPLICATES:
+
+void remDup( string str){
+    if( str.length()== 0){
+        return;
+    }
+    if( str[0] != str[1]){
+       cout << str[0];
+    }
+    remDup( str.substr(1));
+
+}
+int main(){
+    string str = "aaabbbbbccdeeeee";
+    remDup(str);
+    return 0;
+}
