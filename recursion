@@ -68,3 +68,21 @@ int main(){
     cout <<  moveX("axxbdixxbc");
     return 0;
 }
+
+// PERMUTATIONS OF A STRING 
+
+void permutate( string str, string ans){
+    if( str.length()== 0){
+        cout << ans << endl;
+        return;
+    }
+    for( int i =0; i< str.length(); i++){
+        char ch = str[i];
+        string r = str.substr(0, i) + str.substr(i+1);
+        permutate( r, ans+ch);
+    }
+}
+int main(){
+    permutate( "ABCd","");
+    return 0;
+}
