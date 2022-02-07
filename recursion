@@ -69,6 +69,7 @@ int main(){
     return 0;
 }
 
+
 // PERMUTATIONS OF A STRING 
 
 void permutate( string str, string ans){
