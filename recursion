@@ -87,3 +87,22 @@ int main(){
     permutate( "ABCd","");
     return 0;
 }
+
+// 0/1 KNAPSACK :
+
+int knap( int value[], int weight[], int wt, int n){
+    if(n==0 || wt==0){
+        return 0;
+    }
+    if( weight[n-1] > wt){
+        return knap(value,weight,wt,n-1);
+    }
+    return max(knap(value,weight,wt, n-1),knap(value, weight, wt-weight[n-1], n-1)+ value[n-1]);
+}
+int main(){
+    int wt = 50;
+    int value[] = {100,50,150};
+    int weight[] = {10,20,30};
+    cout << knap( value, weight, wt, 3);
+    return 0;
+}
