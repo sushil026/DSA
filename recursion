@@ -1,6 +1,6 @@
 // STRING REVERSAL USING RECURSION:
 
-// int rev( string str){
+int rev( string str){
 //     if( str.length()== 0){
 //         return 0;
 //     }
