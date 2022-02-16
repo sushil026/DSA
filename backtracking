@@ -1,5 +1,6 @@
 // BACKTRACKING
 
+//RAT IN A MAZE
 
 bool check( int x, int y, int n, vector<vector<int> > mat){
     if( x<n && y<n && mat[x][y]== 0 ){
