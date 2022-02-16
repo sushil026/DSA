@@ -1,2 +1,48 @@
 // BACKTRACKING
-kal karunga
+
+
+bool check( int x, int y, int n, vector<vector<int> > mat){
+    if( x<n && y<n && mat[x][y]== 0 ){
+        return true;
+    }
+    return false;
+}
+bool maze ( int x, int y, int n, vector<vector<int> > mat, vector<vector<int>> &res){
+        if( x==n-1 && y==n-1){
+            res[x][y] = 1;
+            return true;
+        }
+        if(check(x,y,n,mat)){
+            res[x][y] = 1;
+            if( maze( x+1,y,n,mat,res)){
+                return true;
+            }
+            if( maze( x,y+1,n,mat,res)){
+                return true;
+            }
+            res[x][y] = 0;
+            return false;
+        }
+        return false;
+    }
+int main(){
+    int n = 5;
+    vector<vector<int>> matr;
+    vector<vector<int>> res(n, vector<int> (n, 0)); 
+    vector<int> p;
+    int c;
+    for (int i = 0; i < n; ++i){
+        for (int j = 0; j < n; ++j){
+            cin >> c;
+            p.push_back(c);
+        } matr.push_back(p);
+        p.clear();
+    }
+    maze(0,0,n,matr,res);
+    for (int i = 0; i < n; ++i){
+        for (int j = 0; j < n; ++j){
+            cout << res[i][j]<< " ";
+        }cout << endl;
+    }
+    return 0;
+}
