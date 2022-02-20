@@ -49,3 +49,5 @@ int main(){
 }
 
 //  N-QUEEN :
+
+int main(){}
