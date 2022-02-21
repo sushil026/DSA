@@ -96,3 +96,51 @@ int main(){
         } cout << endl;
     }
 }
+
+// LEETCODE WALA :
+    
+bool check( vector<string> asd, int n, int r, int c){
+    for (int i = 0; i < n; ++i){
+        if (asd[i][c] == 'Q')
+            return false;
+    }
+    int x = r-1, y= c-1;
+    while( x >=0 && y >=0){
+        if (asd[x][y] == 'Q')
+            return false;
+        x--; y--;   
+    }
+    x = r-1;
+    y = c+1;
+    while( x >=0 && y <n){
+        if (asd[x][y] == 'Q')
+            return false;
+        x--; y++;   
+    }
+    return true;
+}
+void chess( vector<vector<string>> &qwe, vector<string> &asd, int n, int c){
+    if ( c == n){ qwe.push_back( asd);}
+    for (int i = 0; i < n; ++i){
+        if ( check( asd, n, c, i)){
+            asd[c][i] = 'Q';
+            chess( qwe, asd, n, c+1);
+            asd[c][i] = '.';
+        }
+    }
+}
+int main(){
+    int n= 4;
+    vector<vector<string>> qwe;
+    vector<string> asd( n, string( n,'.'));
+    chess( qwe, asd, n, 0);
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < n; ++j)
+        {
+            cout << qwe[i][j]<< endl;
+        }
+        cout << endl;
+    }
+    return 0;
+}
