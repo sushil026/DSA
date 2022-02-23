@@ -1,6 +1,6 @@
  PALINDROME CHARACTERS :
 
- // int main(){
+ int main(){
  //    char str[30];
  //    int n;
  //    cin >> n;
