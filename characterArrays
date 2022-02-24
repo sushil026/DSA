@@ -1,7 +1,7 @@
  PALINDROME CHARACTERS :
 
  int main(){
- //    char str[30];
+     char str[30];
  //    int n;
  //    cin >> n;
  //    cin >> str;
