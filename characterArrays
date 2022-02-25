@@ -2,7 +2,7 @@
 
  int main(){
      char str[30];
- //    int n;
+     int n;
  //    cin >> n;
  //    cin >> str;
  //    int front = 0, end = n-1;
