@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Node{
+public:
+	int key;
+	Node* nxt;
+};
+//  PRINTING THE LINKED LIST
+void printNode( Node* n){
+	while( n != NULL){
+		cout<< n->key<< " ";
+		n = n->nxt;
+	}
+}
+// LENGTH OF A LINKED LIST
+
+int main(){
+	Node* first= NULL;
+	Node* second= NULL;
+	Node* third= NULL;
+	//first = new Node();
+	//second = new Node();
+	//third = new Node();
+	//first->key= 12;
+	//first->nxt= second;
+	//second->key= 23;
+	//second->nxt= third;
+	//third->key= 34;
+	//third->nxt= NULL;
+	printNode(first);
+}
