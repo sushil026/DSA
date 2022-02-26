@@ -13,7 +13,14 @@ void printNode( Node* n){
 	}
 }
 // LENGTH OF A LINKED LIST
-
+void countNode( Node* n){
+	int cnt= 0;
+	while( n != NULL){
+		cnt++;
+		n = n->nxt;
+	}
+	cout<< cnt;
+}
 int main(){
 	Node* first= NULL;
 	Node* second= NULL;
