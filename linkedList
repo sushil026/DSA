@@ -27,27 +27,31 @@ void countNode( Node* n){
 	}
 }
 // INSERT AT END: 
-void insertAtEnd( Node* n, int x){
-	Node* temp= NULL;
+Node* insertAtEnd( Node* n, int x){
+	Node* temp = NULL;
+	temp = new Node();
+	temp->key= x;
+	temp->nxt= NULL;
+	n->nxt = temp;
+	return temp;
+}
+// INSERT AT FIRST:
+Node* insertAtFirst( Node* n, int x){
+	Node* temp = NULL;
 	temp = new Node();
 	temp->key = x;
-	while( n->nxt != NULL){
-		n = n->nxt;
-	}
-	n->nxt = temp;
+	temp->nxt = n;
+	return temp;
 }
+
 int main(){
 	Node* first= NULL;
-	Node* second= NULL;
-	Node* third= NULL;
+	Node* last= NULL;
 	//first = new Node();
-	//second = new Node();
-	//third = new Node();
+	//last = new Node();
 	//first->key= 12;
-	//first->nxt= second;
-	//second->key= 23;
-	//second->nxt= third;
-	//third->key= 34;
-	//third->nxt= NULL;
+	//first->nxt= last;
+	last = insertAtEnd( last, 56);
+	first = insertAtFirst( first,65);
 	printNode(first);
 }
