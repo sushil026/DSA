@@ -43,6 +43,7 @@ Node* insertAtFirst( Node* n, int x){
 	temp->nxt = n;
 	return temp;
 }
+// INSERT AT CERTAIN LOCATION: 
 
 int main(){
 	Node* first= NULL;
