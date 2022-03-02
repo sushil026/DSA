@@ -44,6 +44,18 @@ Node* insertAtFirst( Node* n, int x){
 	return temp;
 }
 // INSERT AT CERTAIN LOCATION: 
+void insertAtPos( Node* n, int x, int pos){
+	int c = 1;
+	Node* temp= NULL;
+	temp = new Node();
+	temp-> key = x;
+	while( c!= pos-1){
+		c++;
+		n = n->nxt;
+	}
+	temp->nxt = n->nxt;
+	n->nxt = temp;
+}
 
 int main(){
 	Node* first= NULL;
