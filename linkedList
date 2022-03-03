@@ -102,4 +102,7 @@ int main(){
 	last = insertAtEnd( last, 56);
 	first = insertAtFirst( first,65);
 	printNode(first);
+	first = deleteAtFirst(first);
+	first = deleteAtEnd(first);
+	printNode(first);
 }
