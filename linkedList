@@ -70,9 +70,9 @@ Node* deleteAtFirst( Node* n){
 	return n;
 }
 //	DELETING AT END:
-Node* deleteAtEnd( Node* n){
+void deleteAtEnd( Node* n){
 	if( n == NULL){ //for empty linked list
-		return n;
+		cout << "Empty List";
 	}
 	else if( n->nxt == NULL){ //for list with only 1 element
 		free(n);
@@ -80,16 +80,12 @@ Node* deleteAtEnd( Node* n){
 	}
 	else{
 		Node* temp= n;
-		Node* temp2= n;
-		while( temp->nxt != NULL){
-			temp2 = temp;
+		while( temp->nxt->nxt != NULL){
 			temp = temp->nxt;
 		}
-		temp2->nxt = NULL;
-		free(temp);
-		temp = NULL;
+		free(temp->nxt);
+		temp->nxt = NULL;
 	}
-	return n;
 }
 
 int main(){
@@ -103,6 +99,6 @@ int main(){
 	first = insertAtFirst( first,65);
 	printNode(first);
 	first = deleteAtFirst(first);
-	first = deleteAtEnd(first);
+	deleteAtEnd(first);
 	printNode(first);
 }
