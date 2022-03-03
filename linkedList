@@ -57,6 +57,18 @@ void insertAtPos( Node* n, int x, int pos){
 	n->nxt = temp;
 }
 // 	DELETING AT FIRST:
+Node* deleteAtFirst( Node* n){
+	if( n == NULL){
+		return n;
+	}
+	else{
+		Node* temp= n;
+		n = n->nxt;
+		free(temp);
+		temp = NULL;
+	}
+	return n;
+}
 //	DELETING AT END:
 
 int main(){
