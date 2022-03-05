@@ -87,7 +87,34 @@ void deleteAtEnd( Node* n){
 		temp->nxt = NULL;
 	}
 }
-
+// DELETING FROM A POSITION: 
+Node* deleteAtPos( Node* n, int x){
+	Node* curr = NULL;
+	Node* pre = NULL;
+	if( n->nxt == NULL){
+		cout << "Empty List";
+		return n;
+	}
+	else if( x == 1){
+		curr = n;
+		n = n->nxt;
+		free(curr);
+		curr = NULL;
+		return n;
+	}
+	else{
+		Node* beg = n;
+		while( --x){
+			curr = n;
+			n = n->nxt;
+		}
+		pre = curr->nxt;
+		curr->nxt = curr->nxt->nxt;
+		free(pre);
+		pre = NULL;
+		return beg;
+	}
+}
 int main(){
 	Node* first= NULL;
 	Node* last= NULL;
