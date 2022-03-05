@@ -115,6 +115,19 @@ Node* deleteAtPos( Node* n, int x){
 		return beg;
 	}
 }
+// REVERSING A LINKED LIST:
+Node* REVERSE( Node* head){
+	cout << "Reversing:::"<< endl;
+	Node* t = NULL;
+	Node* t2 = NULL;
+	while( head!= NULL){
+		t2 = head->nxt;
+		head->nxt = t;
+		t = head;
+		head = t2;
+	}
+	return t;
+}
 int main(){
 	Node* first= NULL;
 	Node* last= NULL;
