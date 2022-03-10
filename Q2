@@ -32,3 +32,4 @@ int main(){
    show(ar,size);
    minmax(ar,size);
 }
+//
