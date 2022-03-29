@@ -1,4 +1,4 @@
-```
+'''
 #include<bits/stdc++.h>
 using namespace std;
 void minmax(int arr[],int size){
@@ -33,4 +33,4 @@ int main(){
    show(ar,size);
    minmax(ar,size);
 }
-```
+'''
