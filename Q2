@@ -1,6 +1,21 @@
 
 #include<bits/stdc++.h>
 using namespace std;
+vector<int> sortedSquares(vector<int>& nums) {
+        vector<int> done(nums.size());
+        int l= 0, r= nums.size()-1;
+        for( int k = nums.size()-1; k>=0; k--){
+          if( abs(nums[l]) > abs(nums[r])){
+            done[k] = nums[l]*nums[l];
+            ++l;
+          }
+          else{
+            done[k] = nums[r]*nums[r];
+            --r;
+          }
+        }
+        return done;
+    }
 void minmax(int arr[],int size){
    int max=0;
    int min=arr[0];
