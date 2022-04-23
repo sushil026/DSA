@@ -4,6 +4,8 @@ using namespace std;
 int main(){
 	vector<int> nums = {1,2,3,4,5,6,7};
 	int k = 6;
+	k = k % nums.size();
+        if( k<0 ){ k+= nums.size();}
 	vector<int> temp(k, 0);
 	int n  = nums.size()-1;
         for(int i= k-1; i>= 0; i--){
