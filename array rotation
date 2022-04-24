@@ -21,3 +21,18 @@ int main(){
           cout<< nums[i]<< " ";
         }
 }
+
+void moveZeroes(vector<int>& nums) {
+        int n = nums.size();
+        int temp, l =0, r =0;
+        while( r< n){
+          if( nums[r] == 0){
+            r++;
+          }
+          else{
+            temp = nums[r];
+            nums[r] = nums[l];
+            nums[l] = temp;
+            l++; r++;
+          }
+        }
