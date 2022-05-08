@@ -143,8 +143,7 @@ int main(){
 	deleteAtEnd(first);
 	printNode(first);
 }
-// DONE
-
+// alternate for removing Nth node: 
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         ListNode *start = new ListNode();
