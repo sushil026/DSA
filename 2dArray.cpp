@@ -69,24 +69,24 @@ using namespace std;
  // }
 //MATRIX MULTIPLICATION :
 
-// int main(){
-//     vector<vector <int>> mat1 ={{2,4,1,2}, {8,4,3,6}, {1,7,9,5}};
-//     vector<vector <int>> mat2 ={{1,2,3}, {4,5,6}, {7,8,9}, {4,5,6}};
-//     if( mat1.size() != mat2[0].size()){
-//         cout << "invalid matices used";
-//         return 0;
-//     }
-//     vector<vector <int>> res( mat1,size(), vector(mat2.size()));
-//     for( int i =0; i < mat1.size(); i++)
-//         for (int j = 0; j < mat2[i].size(); j++)
-//             for (int k = 0; k <= 3; ++k)
-//                 res[i][j] += mat1[i][k]*mat2[k][j];
-//     for (int i = 0; i < 3; ++i)
-//         for (int j = 0; j < 3; ++j)
-//             cout << res[i][j]<< "   ";
-//         cout << endl;
-//     return 0;
-// }
+int main(){
+    vector<vector <int>> mat1 ={{2,4,1,2}, {8,4,3,6}, {1,7,9,5}};
+    vector<vector <int>> mat2 ={{1,2,3}, {4,5,6}, {7,8,9}, {4,5,6}};
+    if( mat1.size() != mat2[0].size()){
+        cout << "invalid matices used";
+        return 0;
+    }
+    vector<vector <int>> res( mat1,size(), vector(mat2.size()));
+    for( int i =0; i < mat1.size(); i++)
+        for (int j = 0; j < mat2[i].size(); j++)
+            for (int k = 0; k <= 3; ++k)
+                res[i][j] += mat1[i][k]*mat2[k][j];
+    for (int i = 0; i < 3; ++i)
+        for (int j = 0; j < 3; ++j)
+            cout << res[i][j]<< "   ";
+        cout << endl;
+    return 0;
+}
 //SEARCHING IN A SORTED MATRIX :
 
 // int main(){
